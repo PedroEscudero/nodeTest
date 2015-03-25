@@ -8,4 +8,4 @@ logger.on('error', function(message){
 
 logger.emit('error', 'Testing errors 1');
 
-logger.emit('error', 'Testing errors 2');
+logger.emit('error', 'Testing errors again');
