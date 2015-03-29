@@ -1,5 +1,5 @@
 var makeCall = require('./sampleModule');
-var hate = require('allHate');
+var hate = require('./allHate');
 
 makeCall();
-hate.iHateYou();
+hate.iHateYou(' motherfucker');

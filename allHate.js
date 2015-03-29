@@ -1,3 +1,3 @@
 exports.iHateYou = function (x) {
-	console.log ('Isaid I hate you!' + x);
+	console.log ('I said I hate you!' + x);
 }
