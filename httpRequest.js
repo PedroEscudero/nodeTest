@@ -1,6 +1,6 @@
 var http = require ('http');
 
-var makeRequest = function(message){}
+var makeRequest = function(message){
 
 var options = {
 	host: 'localhost',
@@ -18,4 +18,4 @@ var request = http.request(options, function(response){
 request.write(message);
 request.end();
 }
-makeRequest("Go, go, go!");
+module.exports = makeRequest;
