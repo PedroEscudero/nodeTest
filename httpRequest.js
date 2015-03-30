@@ -1,5 +1,7 @@
 var http = require ('http');
-var message = "Go, go, go!";
+
+var makeRequest = function(message){}
+
 var options = {
 	host: 'localhost',
 	port: 8080,
@@ -15,3 +17,5 @@ var request = http.request(options, function(response){
 });
 request.write(message);
 request.end();
+}
+makeRequest("Go, go, go!");
