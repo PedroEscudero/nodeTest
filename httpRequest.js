@@ -1,21 +1,15 @@
 var http = require ('http');
-
+var server = http.createServer();
 var makeRequest = function(message){
 
-var options = {
-	host: 'localhost',
-	port: 8080,
-	path: '/',
-	method: 'POST'
+
+
+server.on('request', function(request, response){
+	response.writeHead(200);
+	response.write(message);
+	response.end();
+}).listen(8079);
+
 }
 
-var request = http.request(options, function(response){
-	response.on('data', function(data){
-		console.log(data);
-	});
-
-});
-request.write(message);
-request.end();
-}
 module.exports = makeRequest;
