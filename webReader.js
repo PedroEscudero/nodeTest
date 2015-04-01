@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 
-fs.readFile('README.md', function (err, web2) {
+fs.readFile('README.md', function (err, text) {
     if (err) {
         throw err; 
     }
